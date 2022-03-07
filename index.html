@@ -1,13 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyProduct</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-<script src="js/main.js"></script>
+    <h1 class="visually-hidden">My Product</h1>
+    <header class="header">
+        <div class="container header__container">
+            <a href="/index.html" class="header__logo-link">
+                <svg width="40" height="37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3.133 34.459A3.142 3.142 0 0 1 0 31.326V20.372h7.886v-.012h4.74c1.222-.032 2.256-1.097 2.256-2.35a2.367 2.367 0 0 0-2.35-2.35H6.266v.002H0v-3.135a3.142 3.142 0 0 1 3.133-3.133h9.4c2.38 0 4.417.846 6.077 2.538 1.692 1.66 2.538 3.697 2.538 6.078 0 2.35-.814 4.386-2.475 6.047-1.66 1.66-3.666 2.538-6.015 2.569H6.266v4.7a3.142 3.142 0 0 1-3.133 3.133Z"
+                        fill="#02BC6B" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M25.098 5.758c3.46 3.362 5.205 7.55 5.205 12.31 0 4.68-1.671 8.863-5.08 12.235l-4.838-4.552c2.12-2.098 3.16-4.623 3.16-7.684 0-3.084-1.072-5.605-3.242-7.713l4.794-4.596Z"
+                        fill="#02897A" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M32.505 0C37.491 4.978 40 11.15 40 18.234c0 6.973-2.408 13.141-7.312 18.13l-4.67-4.563c3.654-3.716 5.443-8.223 5.443-13.567 0-5.398-1.85-9.901-5.582-13.628L32.505 0Z"
+                        fill="#035B81" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 26.652h6.266v4.674a3.142 3.142 0 0 1-3.133 3.133A3.142 3.142 0 0 1 0 31.326v-4.674Z"
+                        fill="#028E37" /></svg>
+                <p class="header__logo-text">Product</p>
+            </a>
+            <nav class="header-nav nav">
+                <ul class="header-nav__list nav__list">
+                    <li class="header-nav__item nav__item">
+                        <a href="#" class="header-nav__item-link nav__item-link">Product</a></li>
+                    <li class="header-nav__item nav__item">
+                        <a href="#" class="header-nav__item-link nav__item-link">Customers</a></li>
+                    <li class="header-nav__item nav__item">
+                        <a href="#" class="header-nav__item-link nav__item-link">Pricing</a></li>
+                    <li class="header-nav__item nav__item">
+                        <a href="#" class="header-nav__item-link nav__item-link">Resources</a></li>
+                </ul>
+            </nav>
+            <div class="header-navbar navbar">
+                <button class="header-navbar__btn navbar__in-btn">Sign In</button>
+                <button class="header-navbar__btn navbar__up-btn">Sign Up</button>
+            </div>
+            <button class="header__white-btn"><svg width="24" height="24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2 2 6.486 2 12s4.486 10 10 10Zm0-18c4.411 0 8 3.589 8 8s-3.589 8-8 8-8-3.589-8-8 3.589-8 8-8Z"
+                        fill="#02897A" />
+                    <path d="M19 12a7 7 0 0 0-7-7v14a7 7 0 0 0 7-7Z" fill="#02897A" /></svg>
+            </button>
+            <button class="header__hamburger--opened">
+                <svg width="28" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.5 15.5h21M3.5 7.75h21M3.5 23.25h21" stroke="#173A56" stroke-width="3"
+                        stroke-linecap="round" stroke-linejoin="round" /></svg>
+            </button>
+            <button class="header__hamburger--closed">
+                <svg width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#173A56">
+                        <path d="m3.19.732 13.924 13.924-2.61 2.61L.578 3.343z" />
+                        <path d="M.578 14.657 14.502.733l2.611 2.61L3.19 17.268z" />
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
