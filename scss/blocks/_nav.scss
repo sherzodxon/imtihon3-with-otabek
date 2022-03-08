@@ -1,0 +1,29 @@
+.nav {
+    width: 379px;
+    margin-left: 237px;
+}
+
+.nav__list {
+    display: flex;
+    @include reset-list;
+}
+
+.nav__item {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    &:hover {
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+}
