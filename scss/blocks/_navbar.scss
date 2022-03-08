@@ -17,6 +17,7 @@
     box-sizing: border-box;
     border-radius: 4px;
     background-color: transparent;
+    cursor: pointer;
     &:hover{
         opacity: 0.5;
     }
@@ -35,7 +36,30 @@
     border-radius: 4px;
     background: #02897A;
     color: white;
+    cursor: pointer;
     &:hover{
         opacity: 0.5;
+    }
+}
+.navbar__in-btn--black{
+    color: white;
+}
+.navbar__white-btn{
+    background-image: none;
+}
+@media only screen and(max-width:965px){
+    .navbar{
+        width: 164px;
+        
+    }
+    .navbar__in-btn ,.navbar__up-btn{
+        padding: 6px 5px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+@media only screen and(max-width:$mobile){
+    .navbar{
+      display: none;
     }
 }

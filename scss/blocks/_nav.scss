@@ -15,15 +15,88 @@
     font-weight: 500;
     line-height: 28px;
     letter-spacing: 0px;
-    text-align: left;
 
+}
+.nav__item-link{
+    color:rgb(38, 62, 73);
     &:hover {
-        font-family: Poppins;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 28px;
-        letter-spacing: 0px;
-        text-align: left;
+        color: black;
+    } 
+}
+.nav__item-link--white{
+    color: rgb(196, 207, 218);
+    &:hover{
+        color:white;
     }
+}
+.nav__item-link-one{
+    color:rgb(38, 62, 73);
+    &:hover {
+        color: black;
+    } 
+}
+.nav__item-link--white-one{
+    color: rgb(196, 207, 218);
+    &:hover{
+        color:white;
+    }
+}
+.nav__item-link-two{
+    color:rgb(38, 62, 73);
+    &:hover {
+        color: black;
+    } 
+}
+.nav__item-link--white-two{
+    color: rgb(196, 207, 218);
+    &:hover{
+        color:white;
+    }
+}
+.nav__item-link-three{
+    color:rgb(38, 62, 73);
+    &:hover {
+        color: black;
+    } 
+}
+.nav__item-link--white-three{
+    color: rgb(196, 207, 218);
+    &:hover{
+        color:white;
+    }
+}
+@media only screen and(max-width:1120px){
+    .nav{
+        margin-left: 100px;
+    }
+}
+@media only screen and(max-width:965px){
+    .nav{
+        width: 280px;
+    }
+    .nav{
+        margin-left: 30px;
+    }
+    .nav__item{
+        font-size: 13px;
+    }
+}
+@media only screen and(max-width:$mobile){
+    .nav{
+      display: none;
+    }
+    .nav--active{
+        position: absolute;
+        display:block;
+        top: 78px;
+        left: -30px;
+        bottom: 0;
+        width: 60vh;
+        background-color: yellow;
+    }
+    .nav__list--active{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
