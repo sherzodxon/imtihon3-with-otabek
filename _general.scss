@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; 
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  background-color: #fff;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  background-color: #ccc;
+  flex-grow: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
