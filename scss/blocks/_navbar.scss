@@ -18,8 +18,10 @@
     border-radius: 4px;
     background-color: transparent;
     cursor: pointer;
-    &:hover{
-        opacity: 0.5;
+
+    &:hover {
+        background-color: #02897A;
+        color: white;
     }
 }
 
@@ -37,29 +39,57 @@
     background: #02897A;
     color: white;
     cursor: pointer;
-    &:hover{
-        opacity: 0.5;
+
+    &:hover {
+        background-color: transparent;
+        color: black;
     }
 }
-.navbar__in-btn--black{
+
+.navbar__in-btn--black {
     color: white;
+    border: 1px solid #5c6268;
 }
-.navbar__white-btn{
-    background-image: none;
-}
-@media only screen and(max-width:965px){
-    .navbar{
-        width: 164px;
-        
+
+.navbar__up-btn--black {
+    border: 1px solid #5c6268;
+    &:hover {
+        color: #ffffff;
     }
-    .navbar__in-btn ,.navbar__up-btn{
+}
+
+.navbar__white-btn {
+    background-image: url(/img/black-white.svg);
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.navbar__white-btn-black {
+    background-image: url(/img/black-white.svg);
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media only screen and(max-width:965px) {
+    .navbar {
+        width: 164px;
+
+    }
+
+    .navbar__in-btn,
+    .navbar__up-btn {
         padding: 6px 5px;
         font-size: 14px;
         font-weight: 500;
     }
 }
-@media only screen and(max-width:$mobile){
-    .navbar{
-      display: none;
+
+@media only screen and(max-width:$mobile) {
+    .navbar {
+        display: none;
     }
 }

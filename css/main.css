@@ -497,16 +497,34 @@ a {
 }
 
 .header__hamburger--opened {
-  background-color: transparent;
+  background: url(/img/hamburger.svg) no-repeat center center;
+  width: 28px;
+  height: 32px;
+  border: none;
+  display: none;
+}
+
+.header__hamburger-white--opened {
+  background: url(/img/hamb-white.svg) no-repeat center center;
+  width: 28px;
+  height: 32px;
   border: none;
   display: none;
 }
 
 .header__hamburger--closed {
-  background-color: transparent;
+  background: url(/img/xy.svg) no-repeat center center;
   border: none;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 32px;
+  display: none;
+}
+
+.header__hamburger-white--closed {
+  background: url(/img/xy-wite.svg) no-repeat center center;
+  width: 28px;
+  height: 32px;
+  border: none;
   display: none;
 }
 
@@ -519,6 +537,12 @@ a {
 
 @media only screen and (max-width: 700px) {
   .header__hamburger--opened {
+    display: block;
+  }
+  .header__hamburger--closed {
+    display: block;
+  }
+  .header__hamburger-white--closed {
     display: block;
   }
 }
@@ -645,8 +669,10 @@ a {
     top: 78px;
     left: -30px;
     bottom: 0;
-    width: 60vh;
-    background-color: yellow;
+    right: 0;
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
   }
   .nav__list--active {
     display: -webkit-box;
@@ -656,6 +682,12 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 60vh;
+    background-color: #fff;
+    height: 100%;
+  }
+  .nav__item {
+    margin-bottom: 20px;
   }
 }
 
@@ -689,7 +721,8 @@ a {
 }
 
 .navbar__in-btn:hover {
-  opacity: 0.5;
+  background-color: #02897A;
+  color: white;
 }
 
 .navbar__up-btn {
@@ -710,22 +743,45 @@ a {
 }
 
 .navbar__up-btn:hover {
-  opacity: 0.5;
+  background-color: transparent;
+  color: black;
 }
 
 .navbar__in-btn--black {
   color: white;
+  border: 1px solid #5c6268;
+}
+
+.navbar__up-btn--black {
+  border: 1px solid #5c6268;
+}
+
+.navbar__up-btn--black:hover {
+  color: #ffffff;
 }
 
 .navbar__white-btn {
-  background-image: none;
+  background-image: url(/img/black-white.svg);
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.navbar__white-btn-black {
+  background-image: url(/img/black-white.svg);
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 @media only screen and (max-width: 965px) {
   .navbar {
     width: 164px;
   }
-  .navbar__in-btn, .navbar__up-btn {
+  .navbar__in-btn,
+  .navbar__up-btn {
     padding: 6px 5px;
     font-size: 14px;
     font-weight: 500;

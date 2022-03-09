@@ -17,86 +17,117 @@
     letter-spacing: 0px;
 
 }
-.nav__item-link{
-    color:rgb(38, 62, 73);
+
+.nav__item-link {
+    color: #263e49;
+
     &:hover {
         color: black;
-    } 
-}
-.nav__item-link--white{
-    color: rgb(196, 207, 218);
-    &:hover{
-        color:white;
     }
 }
-.nav__item-link-one{
-    color:rgb(38, 62, 73);
+
+.nav__item-link--white {
+    color: rgb(196, 207, 218);
+
+    &:hover {
+        color: white;
+    }
+}
+
+.nav__item-link-one {
+    color: rgb(38, 62, 73);
+
     &:hover {
         color: black;
-    } 
-}
-.nav__item-link--white-one{
-    color: rgb(196, 207, 218);
-    &:hover{
-        color:white;
     }
 }
-.nav__item-link-two{
-    color:rgb(38, 62, 73);
+
+.nav__item-link--white-one {
+    color: rgb(196, 207, 218);
+
+    &:hover {
+        color: white;
+    }
+}
+
+.nav__item-link-two {
+    color: rgb(38, 62, 73);
+
     &:hover {
         color: black;
-    } 
-}
-.nav__item-link--white-two{
-    color: rgb(196, 207, 218);
-    &:hover{
-        color:white;
     }
 }
-.nav__item-link-three{
-    color:rgb(38, 62, 73);
+
+.nav__item-link--white-two {
+    color: rgb(196, 207, 218);
+
+    &:hover {
+        color: white;
+    }
+}
+
+.nav__item-link-three {
+    color: rgb(38, 62, 73);
+
     &:hover {
         color: black;
-    } 
-}
-.nav__item-link--white-three{
-    color: rgb(196, 207, 218);
-    &:hover{
-        color:white;
     }
 }
-@media only screen and(max-width:1120px){
-    .nav{
+
+.nav__item-link--white-three {
+    color: rgb(196, 207, 218);
+
+    &:hover {
+        color: white;
+    }
+}
+
+@media only screen and(max-width:1120px) {
+    .nav {
         margin-left: 100px;
     }
 }
-@media only screen and(max-width:965px){
-    .nav{
+
+@media only screen and(max-width:965px) {
+    .nav {
         width: 280px;
     }
-    .nav{
+
+    .nav {
         margin-left: 30px;
     }
-    .nav__item{
+
+    .nav__item {
         font-size: 13px;
     }
 }
-@media only screen and(max-width:$mobile){
-    .nav{
-      display: none;
+
+@media only screen and(max-width:$mobile) {
+    .nav {
+        display: none;
     }
-    .nav--active{
+
+    .nav--active {
         position: absolute;
-        display:block;
+        display: block;
         top: 78px;
         left: -30px;
         bottom: 0;
-        width: 60vh;
-        background-color: yellow;
+        right: 0;
+        background-color: black;
+        opacity: 0.6;
+        width: 100%;
     }
-    .nav__list--active{
+
+    .nav__list--active {
         display: flex;
         flex-direction: column;
+        width: 60vh;
+        background-color: #fff;
+        height: 100%;
+    }
+    .nav__item{
+        margin-bottom: 20px;
     }
 
 }
