@@ -1,0 +1,68 @@
+.intro {
+    max-width: 1106px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+.intro__contact {
+    max-width: 518px;
+}
+
+.intro__contact-heading {
+    @include list;
+    font-weight: 700;
+    font-family: 'Poppins';
+    line-height: 60px;
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+.intro__contact-desc {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 45px;
+    color: $lightblack;
+    max-width: 458px;
+}
+
+.intro__contact-links {
+    display: flex;
+    align-items: center;
+}
+
+.intro__contact-linker {
+    position: relative;
+    color: $licolor2;
+
+
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    padding-left: 26px;
+
+    &::before {
+        position: absolute;
+        background: url(../img/arrow.svg) no-repeat;
+        width: 17px;
+        height: 20px;
+        left: 0;
+        top: 3px;
+        display: block;
+        content: ('');
+    }
+}
+
+.itro__contact-link {
+    margin-right: 30px;
+}
+
+.intro__wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+}
+
