@@ -869,10 +869,8 @@ a {
   }
 }
 
-.intro {
-  max-width: 1106px;
-  padding: 0px 15px;
-  margin: 0 auto;
+.intro__container {
+  margin-top: 78px;
 }
 
 .intro__contact {
@@ -1043,5 +1041,108 @@ a {
   font-family: 'Poppins';
   font-weight: 600;
   background-color: #02897A;
+}
+
+.content__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.content__buttons {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content__first-button,
+.content__second-button,
+.content__three-button {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background: #efefef;
+}
+
+.content__first-button:hover,
+.content__second-button:hover,
+.content__three-button:hover {
+  border: 1px solid #02897A;
+}
+
+.content__first-button:active,
+.content__second-button:active,
+.content__three-button:active {
+  background: #02897a;
+}
+
+.content__item {
+  border: 1px solid #8c959b;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.content__item--active {
+  border: 1px solid #02897a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.content__item-text--active {
+  width: 294px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #02897a;
+  margin: 0;
+  margin-left: 24px;
+  margin-bottom: 40px;
+  margin-top: 12px;
+}
+
+.content__item-text {
+  width: 294px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #22343D;
+  margin: 0;
+  margin-left: 24px;
+  margin-bottom: 40px;
+  margin-top: 12px;
+}
+
+.content__item-small-text {
+  margin-left: 24px;
+  margin-top: 24px;
 }
 /*# sourceMappingURL=main.css.map */
