@@ -1,3 +1,11 @@
+@keyframes nav-open{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+     transform: translateX(0);
+    }
+}
 .navbar {
     display: flex;
     width: 264px;
@@ -89,7 +97,29 @@
 }
 
 @media only screen and(max-width:$mobile) {
-    .navbar {
-        display: none;
+    .navbar{
+        display:none;
+    }
+    .navbar--active {
+        display: flex;
+        flex-direction: column;
+        width: 70px;
+        position: absolute;
+        top: 428px;
+        right: 115px;
+        z-index: 99;
+        animation: nav-open 0.2s ease;
+    }
+    .navbar__in-btn{
+        background-color: white;
+        margin-bottom: 10px;
+        width: 70px;
+    }
+    .navbar__up-btn{
+        width: 70px;
+        margin-bottom: 10px;
+        &:hover{
+            background-color: #fff;
+        }
     }
 }

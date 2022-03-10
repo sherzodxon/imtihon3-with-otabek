@@ -1,3 +1,10 @@
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    z-index: 2;
+}
 .header__container {
     display: flex;
     justify-content: space-between;
@@ -46,7 +53,6 @@
     border: none;
     width: 28px;
     height: 32px;
-    display: none;
 }
 .header__hamburger-white--closed{
     background:url(/img/xy-wite.svg) no-repeat center center;
@@ -65,12 +71,6 @@
 
 @media only screen and(max-width:$mobile) {
     .header__hamburger--opened {
-        display: block;
-    }
-    .header__hamburger--closed {
-        display: block;
-    }
-    .header__hamburger-white--closed {
         display: block;
     }
 }
