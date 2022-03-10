@@ -650,7 +650,7 @@ a {
   margin-right: 30px;
 }
 
-.intro__wrapper {
+.intro__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,6 +658,28 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.intro__container-imeger {
+  max-width: 600px;
+  height: 600px;
+}
+
+@media only screen and (max-width: 998px) {
+  .intro__container-imeger {
+    max-width: 500px;
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 889px) {
+  .intro__container-imeger {
+    max-width: 400px;
+    height: 400px;
+  }
 }
 
 .link {
