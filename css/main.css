@@ -904,9 +904,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  max-width: 360px;
 }
 
 .intro__contact-linker {
@@ -932,11 +933,11 @@ a {
   content: "";
 }
 
-.itro__contact-link {
+.intro__contact-link {
   margin-right: 30px;
 }
 
-.intro__wrapper {
+.intro__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -944,6 +945,95 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.intro__container-imeger {
+  max-width: 600px;
+  height: 600px;
+  display: block;
+}
+
+@media only screen and (max-width: 998px) {
+  .intro__container-imeger {
+    max-width: 500px;
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 889px) {
+  .intro__container-imeger {
+    max-width: 400px;
+    height: 400px;
+  }
+  .intro__contact-heading {
+    font-size: 37px;
+  }
+}
+
+@media only screen and (max-width: 887px) {
+  .intro__contact-desc {
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
+  .intro__contact-links {
+    margin: 0 auto;
+  }
+  .intro__contact-heading {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 789px) {
+  .intro__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .intro__container-imeger {
+    max-width: 338px;
+    height: 320px;
+  }
+  .intro__contact-link {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 368px) {
+  .intro__contact-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .intro__contact-link {
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .intro__contact-linker {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 368px) {
+  .intro__contact-heading {
+    font-size: 30px;
+  }
+  .intro__container-imeger {
+    max-width: 315px;
+    height: 320px;
+  }
 }
 
 .link {
