@@ -5,14 +5,14 @@
 }
 
 body {
-  margin: 0; 
+  margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
   font-size: 15px;
   line-height: 1.5;
   background-color: #fff;
   height: 100vh;
-
+  color: black;
   display: flex;
   flex-direction: column;
 }
@@ -20,6 +20,9 @@ body {
 a {
   text-decoration: none;
   color: black;
+}
+.a-white{
+  color:white;
 }
 
 .visually-hidden {
@@ -30,4 +33,12 @@ a {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.black-body {
+  background-color: rgba(31, 46, 53, 1);
+  color: white;
+}
+.ice-body{
+  overflow: hidden;
 }
