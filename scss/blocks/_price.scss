@@ -1,0 +1,121 @@
+.price__title,
+.price__text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.price__list {
+    @include reset-list;
+}
+
+.price__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 322px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.price__item-title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0px;
+    margin-top: 24px;
+}
+
+.price__status {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.price__price {
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100px;
+    letter-spacing: 0.20000000298023224px;
+    margin: 0;
+    margin-top: 16px;
+    color: rgba(2, 137, 122, 1);
+}
+
+.price__character {
+    //styleName: Title;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.10000000149011612px;
+    margin: 0;
+    margin-left: 8px;
+    color: rgba(2, 137, 122, 1);
+}
+
+.price__month {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.10000000149011612px;
+    margin: 0;
+    margin-left: 8px;
+}
+.price__easy-link{
+    margin-bottom: 16px;
+    border-bottom: 1px solid transparent;
+    &:hover{
+        border-bottom: 1px solid ;
+    }
+}
+.price__link{
+    margin: 0;
+    padding: 0;
+    padding: 11px 19px;
+    background-color: rgba(2, 137, 122, 1);
+    color: white;
+    border-radius: 8px;
+    margin-top: 38px;
+    margin-bottom: 32px;
+    border: 1px solid transparent;
+    &:hover{
+        border: 1px solid #02897a;
+        background-color: transparent;
+        color: rgba(2, 137, 122, 1);
+    }
+}
+.standart-item{
+    background-color: #02897a;
+}
+.standart-content{
+    color: #fff;
+}
+.standart-link{
+    background-color: #fff;
+    color: #02897a;
+    &:hover{
+        color: #fff;
+        border: 1px solid #fff ;
+    }
+}
+@media only screen and(max-width:1050px){
+    .price__item{
+        width: 280px;
+    }
+}
+@media only screen and(max-width:905px){
+    .price__item{
+        width: 335px;
+    }
+    .price__list{
+     flex-direction: column;
+    }
+}
+@media only screen and (max-width:380px){
+    .price__item{
+        width: 250px;
+    }
+}

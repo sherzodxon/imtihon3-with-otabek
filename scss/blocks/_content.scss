@@ -105,23 +105,26 @@
 
 @media only screen and(max-width:400px) {
     .content__list{
-        width: 280px;
+        width: 250px;
     }
     .content__item {
-        width: 280px;
+        width: 250px;
+    }
+    .content__item-small-text{
+        margin-left: 20px;
     }
 
     .content__item-text {
         width: 232px;
         font-size: 18px;
         line-height: 30px;
-        margin-left: 24px;
-        margin-right: 24px;
+        margin-left: 20px;
+        margin-right: 20px;
         margin-bottom: 40px;
         margin-top: 9px;
         padding: 0;
     }
     .content__item-img{
-        width: 280px;
+        width: 250px;
     }
 }
