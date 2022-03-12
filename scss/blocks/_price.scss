@@ -6,6 +6,7 @@
 
 .price__list {
     @include reset-list;
+    margin-bottom: 215px;
 }
 
 .price__item {

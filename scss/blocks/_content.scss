@@ -76,22 +76,9 @@
 }
 
 @media only screen and(max-width:1100px) {
-    .content__list {
-        flex-direction: column;
-        margin: 0 auto;
-        width: 348px;
-    }
-
     .content__item {
         margin-bottom: 25px;
-    }
-
-    .content__buttons {
-        flex-direction: column;
-        width: 16px;
-        height: 70px;
-        margin: 0 auto;
-        margin-top: 64px;
+        width: 327px;
     }
 
     .content__title {
@@ -101,30 +88,71 @@
     .content__text {
         text-align: center;
     }
-}
 
-@media only screen and(max-width:400px) {
-    .content__list{
-        width: 250px;
-    }
-    .content__item {
-        width: 250px;
-    }
-    .content__item-small-text{
-        margin-left: 20px;
+    .content__item-img {
+        width: 327px;
     }
 
-    .content__item-text {
-        width: 232px;
-        font-size: 18px;
-        line-height: 30px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 40px;
-        margin-top: 9px;
-        padding: 0;
+    @media only screen and(max-width:1050px) {
+        .content__item {
+            width: 280px;
+        }
+
+        .content__item-img {
+            width: 280px;
+        }
+        .content__item-text{
+            width: 230px;
+        }
     }
-    .content__item-img{
-        width: 250px;
+    @media only screen and(max-width:900px){
+        .content__list{
+            flex-direction: column;
+            width: 327px;
+            margin: 0 auto;
+        }
+        .content__item,
+        .content__item-img{
+            width: 327px;
+        }
+        .content__item-text{
+            width: 275px;
+        }
+        .content__buttons {
+            flex-direction: column;
+            width: 16px;
+            height: 70px;
+            margin: 0 auto;
+            margin-top: 64px;
+            margin-bottom: 64px;
+        }
+    }
+    @media only screen and(max-width:400px) {
+        .content__list {
+            width: 250px;
+        }
+
+        .content__item {
+            width: 250px;
+        }
+
+        .content__item-small-text {
+            margin-left: 20px;
+        }
+
+        .content__item-text {
+            width: 232px;
+            font-size: 18px;
+            line-height: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-top: 9px;
+            padding: 0;
+        }
+
+        .content__item-img {
+            width: 250px;
+        }
     }
 }
