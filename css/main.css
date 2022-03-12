@@ -870,14 +870,8 @@ a {
   }
 }
 
-<<<<<<< HEAD
-.intro {
-  max-width: 1106px;
-  margin: 0 auto;
-=======
 .intro__container {
   margin-top: 78px;
->>>>>>> ad9ab629ad41ac3e3f8d75e38dbb60d5de01cd42
 }
 
 .intro__contact {
@@ -1056,18 +1050,10 @@ a {
   background-color: #02897A;
 }
 
-<<<<<<< HEAD
 .product__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-=======
-.content__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: flex;
->>>>>>> ad9ab629ad41ac3e3f8d75e38dbb60d5de01cd42
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1082,7 +1068,6 @@ a {
           align-items: baseline;
 }
 
-<<<<<<< HEAD
 .product__item {
   margin: 0;
   padding: 0;
@@ -1162,7 +1147,27 @@ a {
 
 .product__link {
   display: block;
-=======
+}
+
+.content__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
 .content__buttons {
   margin-left: auto;
   margin-right: auto;
@@ -1642,6 +1647,5 @@ a {
   .what__text {
     width: 280px;
   }
->>>>>>> ad9ab629ad41ac3e3f8d75e38dbb60d5de01cd42
 }
 /*# sourceMappingURL=main.css.map */
