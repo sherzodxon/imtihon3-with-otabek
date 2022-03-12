@@ -18,7 +18,8 @@
         "../scss/blocks/_product.scss",
         "../scss/blocks/_content.scss",
         "../scss/blocks/_price.scss",
-        "../scss/blocks/_what.scss"
+        "../scss/blocks/_what.scss",
+        "../scss/blocks/_join.scss"
     ],
     "names": [],
     "file": "main.css"
