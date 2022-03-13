@@ -1178,6 +1178,11 @@ a {
   .product__item-span {
     margin: 0 auto;
   }
+  .product__heading {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 45px;
+  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -1339,6 +1344,11 @@ a {
     margin: 0 auto;
     margin-top: 70px;
     margin-bottom: 70px;
+  }
+  .content__title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 45px;
   }
 }
 
@@ -1541,6 +1551,11 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .price__title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 45px;
+  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -1689,6 +1704,11 @@ a {
   .what__item-text {
     width: 275px;
   }
+  .what__title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 45px;
+  }
 }
 
 @media only screen and (max-width: 580px) {
@@ -1784,6 +1804,28 @@ a {
   }
 }
 
+@-webkit-keyframes text-open {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes text-open {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .faqs__title {
   text-align: center;
   font-size: 34px;
@@ -1851,6 +1893,7 @@ a {
   position: absolute;
   background: url(/img/plus_circle.svg) no-repeat center center;
   left: 0px;
+  top: 20%;
 }
 
 .faqs__button--active {
@@ -1878,5 +1921,75 @@ a {
 
 .faqs__item-text {
   display: none;
+}
+
+.faqs__item-text--active {
+  display: block;
+  -webkit-animation: text-open 0.2s ease;
+          animation: text-open 0.2s ease;
+}
+
+@media only screen and (max-width: 950px) {
+  .faqs__list,
+  .faqs__item {
+    width: 850px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .faqs__list,
+  .faqs__item {
+    width: 760px;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .faqs__list,
+  .faqs__item {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .faqs__list,
+  .faqs__item {
+    width: 550px;
+  }
+  .faqs__title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 45px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .faqs__list,
+  .faqs__item {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .faqs__list,
+  .faqs__item {
+    width: 350px;
+  }
+  .faqs__button {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .faqs__list,
+  .faqs__item {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .faqs__list,
+  .faqs__item {
+    width: 260px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -146,6 +146,11 @@
     .price__list {
         flex-direction: column;
     }
+    .price__title{
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 45px;
+    }
 }
 
 @media only screen and (max-width:380px) {
