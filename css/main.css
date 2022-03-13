@@ -1373,6 +1373,29 @@ a {
   margin-bottom: 50px;
 }
 
+.price__pricing {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 130px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0;
+}
+
+.big-title {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
 .price__list {
   display: -webkit-box;
   display: -ms-flexbox;

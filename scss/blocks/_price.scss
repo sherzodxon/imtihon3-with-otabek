@@ -4,6 +4,27 @@
     margin-bottom: 50px;
 }
 
+.price__pricing {
+    align-items: center;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 130px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0
+}
+
+.big-title {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
 .price__list {
     @include reset-list;
     margin-bottom: 215px;
@@ -65,14 +86,17 @@
     margin: 0;
     margin-left: 8px;
 }
-.price__easy-link{
+
+.price__easy-link {
     margin-bottom: 16px;
     border-bottom: 1px solid transparent;
-    &:hover{
-        border-bottom: 1px solid ;
+
+    &:hover {
+        border-bottom: 1px solid;
     }
 }
-.price__link{
+
+.price__link {
     margin: 0;
     padding: 0;
     padding: 11px 19px;
@@ -82,41 +106,50 @@
     margin-top: 38px;
     margin-bottom: 32px;
     border: 1px solid transparent;
-    &:hover{
+
+    &:hover {
         border: 1px solid #02897a;
         background-color: transparent;
         color: rgba(2, 137, 122, 1);
     }
 }
-.standart-item{
+
+.standart-item {
     background-color: #02897a;
 }
-.standart-content{
+
+.standart-content {
     color: #fff;
 }
-.standart-link{
+
+.standart-link {
     background-color: #fff;
     color: #02897a;
-    &:hover{
+
+    &:hover {
         color: #fff;
-        border: 1px solid #fff ;
+        border: 1px solid #fff;
     }
 }
-@media only screen and(max-width:1050px){
-    .price__item{
+
+@media only screen and(max-width:1050px) {
+    .price__item {
         width: 280px;
     }
 }
-@media only screen and(max-width:905px){
-    .price__item{
+
+@media only screen and(max-width:905px) {
+    .price__item {
         width: 335px;
     }
-    .price__list{
-     flex-direction: column;
+
+    .price__list {
+        flex-direction: column;
     }
 }
-@media only screen and (max-width:380px){
-    .price__item{
+
+@media only screen and (max-width:380px) {
+    .price__item {
         width: 250px;
     }
 }
