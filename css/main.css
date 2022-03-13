@@ -1824,4 +1824,59 @@ a {
   width: 920px;
   margin: 0 auto;
 }
+
+.faqs__item {
+  border-bottom: 1px solid #E7E7E7;
+  width: 920px;
+}
+
+.faqs__button {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  padding-left: 40px;
+  position: relative;
+}
+
+.faqs__button::after {
+  width: 24px;
+  height: 24px;
+  content: '';
+  position: absolute;
+  background: url(/img/plus_circle.svg) no-repeat center center;
+  left: 0px;
+}
+
+.faqs__button--active {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  padding-left: 40px;
+  position: relative;
+}
+
+.faqs__button--active::after {
+  width: 24px;
+  height: 24px;
+  content: '';
+  position: absolute;
+  background: url(/img/minus_circle.svg) no-repeat center center;
+  left: 0px;
+}
+
+.faqs__item-text {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
