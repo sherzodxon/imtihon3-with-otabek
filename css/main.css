@@ -869,6 +869,11 @@ a {
   }
 }
 
+.intro {
+  max-width: 1106px;
+  margin: 0 auto;
+}
+
 .intro__contact {
   max-width: 518px;
 }
@@ -1043,5 +1048,104 @@ a {
   font-family: 'Poppins';
   font-weight: 600;
   background-color: #02897A;
+}
+
+.product__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.product__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 57px;
+  max-width: 240px;
+}
+
+.product__item:last-child {
+  margin-right: 0;
+}
+
+.product__heading {
+  max-width: 539px;
+  margin: 0 auto;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #22343D;
+}
+
+.product__container {
+  padding-top: 114px;
+}
+
+.product__item-heading {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 13px;
+  color: #22343D;
+}
+
+.product__item-desc {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343D;
+}
+
+.product__item-span {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 19px;
+  margin-bottom: 30px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.product__item-span-arrow {
+  background-color: #02897A;
+  background-image: url(../img/firstArrow.svg);
+}
+
+.product__item-span-wave {
+  background-color: #4D8DFF;
+  background-image: url(../img/3.svg);
+}
+
+.product__item-span-heart {
+  background-color: #740A76;
+  background-image: url(../img/2.svg);
+}
+
+.product__item-span-oclock {
+  background-color: #F03E3D;
+  background-image: url(../img/4.svg);
+}
+
+.product__link {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
