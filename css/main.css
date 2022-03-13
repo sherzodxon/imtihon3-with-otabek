@@ -1202,11 +1202,6 @@ a {
   .product__item:last-child {
     margin: 0 auto;
     margin-top: 57px;
-    margin-top: 50px;
-  }
-  .product__item:last-child {
-    margin: 0 auto;
-    margin-top: 50px;
   }
   .product::after {
     left: -300px;
@@ -2064,6 +2059,9 @@ a {
   .faqs__list,
   .faqs__item {
     width: 260px;
+  }
+}
+
 .validation__list {
   margin: 0;
   padding: 0;
