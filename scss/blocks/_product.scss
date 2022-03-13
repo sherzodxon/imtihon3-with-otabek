@@ -108,4 +108,9 @@
         margin: 0 auto;
     }
 }
+@media only screen and(max-width:380px){
+    .product__heading{
+        width: 250px;
+    }
+}
 
