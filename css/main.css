@@ -870,13 +870,8 @@ a {
   }
 }
 
-.intro {
-  max-width: 1106px;
-  margin: 0 auto;
-}
-
 .intro__container {
-  margin-top: 40px;
+  margin-top: 78px;
 }
 
 .intro__contact {
