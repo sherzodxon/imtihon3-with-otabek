@@ -1,0 +1,135 @@
+.what__title,
+.what__text {
+    text-align: center;
+    width: 537px;
+    margin: 0 auto;
+}
+
+.what__list {
+    @include reset-list;
+    margin-top: 50px;
+}
+
+.what__item {
+    width: 327px;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.what__stars {
+    float: left;
+    height: 46px;
+    margin-left: 28px;
+    margin-top: 28px;
+}
+
+.what__item-text {
+    width: 275px;
+    margin-top: 90px;
+    margin-left: 28px;
+}
+
+.what__stars:not(:checked)>input {
+    position: absolute;
+    display: none;
+}
+
+.what__stars:not(:checked)>label {
+    float: right;
+    width: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.what__stars:not(:checked)>label:before {
+    content: '★ ';
+    height: 25px;
+}
+
+.what__stars>input:checked~label {
+    color: #ffc700;
+}
+
+.what__stars:not(:checked)>label:hover,
+.what__stars:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.what__stars>input:checked+label:hover,
+.what__stars>input:checked+label:hover~label,
+.what__stars>input:checked~label:hover,
+.what__stars>input:checked~label:hover~label,
+.what__stars>label:hover~input:checked~label {
+    color: #c59b08;
+}
+
+.what__item-status {
+    margin-left: 28px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 23px;
+}
+
+.what__item-character {
+    margin-left: 14px;
+}
+
+.what__item-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #02897A;
+    margin: 0;
+}
+
+.what__item-job {
+    margin: 0;
+}
+
+@media only screen and(max-width:1050px) {
+    .what__item {
+        width: 300px;
+    }
+}
+@media only screen and (max-width:960px){
+    .what__item{
+        width: 280px;
+    }
+    .what__item-text{
+        width: 220px;
+    }
+}
+@media only screen and (max-width:905px){
+    .what__list{
+        flex-direction: column;
+    }
+    .what__item{
+        width: 327px;
+        margin-bottom: 25px;
+    }
+    .what__item-text{
+        width: 275px;
+    }
+}
+@media only screen and (max-width:580px){
+    .what__title,.what__text{
+        width: 300px;
+    }
+}
+@media only screen and(max-width:350px){
+    .what__item{
+        width: 280px;
+    }
+    .what__item-text{
+        width: 245px;
+    }
+    .what__text{
+        width: 280px;
+    }
+}
