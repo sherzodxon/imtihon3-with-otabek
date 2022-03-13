@@ -481,7 +481,7 @@ a {
 }
 
 .header__logo-text {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -870,14 +870,13 @@ a {
   }
 }
 
-<<<<<<< HEAD
 .intro {
   max-width: 1106px;
   margin: 0 auto;
-=======
+}
+
 .intro__container {
-  margin-top: 78px;
->>>>>>> ad9ab629ad41ac3e3f8d75e38dbb60d5de01cd42
+  margin-top: 40px;
 }
 
 .intro__contact {
@@ -1056,18 +1055,10 @@ a {
   background-color: #02897A;
 }
 
-<<<<<<< HEAD
 .product__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-=======
-.content__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: flex;
->>>>>>> ad9ab629ad41ac3e3f8d75e38dbb60d5de01cd42
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1082,7 +1073,6 @@ a {
           align-items: baseline;
 }
 
-<<<<<<< HEAD
 .product__item {
   margin: 0;
   padding: 0;
@@ -1160,9 +1150,60 @@ a {
   background-image: url(../img/4.svg);
 }
 
-.product__link {
-  display: block;
-=======
+.product__button {
+  max-width: 185px;
+  margin: 0 auto;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  margin-top: 60px;
+  border: 1px solid transparent;
+}
+
+.product__button:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #BCD0E5;
+}
+
+@media screen and (max-width: 1026px) {
+  .product__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .product__list {
+    text-align: center;
+  }
+  .product__item-span {
+    margin: 0 auto;
+  }
+}
+
+.content__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
 .content__buttons {
   margin-left: auto;
   margin-right: auto;
@@ -1642,6 +1683,5 @@ a {
   .what__text {
     width: 280px;
   }
->>>>>>> ad9ab629ad41ac3e3f8d75e38dbb60d5de01cd42
 }
 /*# sourceMappingURL=main.css.map */

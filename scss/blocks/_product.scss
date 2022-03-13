@@ -80,6 +80,34 @@
     }
 }
 
-.product__link {
-    display: block;
+.product__button {
+    max-width: 185px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    margin-top: 60px;
+    border: 1px solid transparent;
+    &:hover {
+        color: #000;
+        background-color: $snow;
+        border: 1px solid #BCD0E5;
+    }
 }
+
+@media screen and(max-width: 1026px) {
+    .product__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and(max-width: 750px) {
+    .product__list {
+        text-align: center;
+    }
+
+    .product__item-span {
+        margin: 0 auto;
+    }
+}
+
