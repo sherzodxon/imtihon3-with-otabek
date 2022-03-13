@@ -1783,4 +1783,45 @@ a {
     margin-left: 70px;
   }
 }
+
+.faqs__title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 51px;
+  letter-spacing: 0px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.faqs__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.faqs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 920px;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=main.css.map */

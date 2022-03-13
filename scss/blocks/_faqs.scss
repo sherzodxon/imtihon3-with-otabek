@@ -1,0 +1,25 @@
+.faqs__title {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: 0px;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.faqs__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 50px;
+}
+.faqs__list{
+    @include reset-list;
+    flex-direction: column;
+    width: 920px;
+    margin: 0 auto;
+}
