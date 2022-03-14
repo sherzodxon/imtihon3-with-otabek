@@ -120,3 +120,107 @@
     margin-bottom: 30px;
     margin-left: 65px;
 }
+
+.product__item-span-orange  {
+    position: absolute;
+    top: 10%;
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-color: #FF9900;
+    border-radius: 14px;
+}
+
+.product__item-span-red {
+    position: absolute;
+    top: 10%;
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-color: #F03E3D;
+    border-radius: 14px;
+}
+
+.product__item-span-blue {
+    position: absolute;
+    top: 10%;
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-color: #4D8DFF;
+    border-radius: 14px;
+}
+
+
+.product__item-span--orange {
+    background-image: url(../img/tick.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.product__item-span--red {
+    background-image: url(../img/tick.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.product__item-span--blue {
+    background-image: url(../img/tick.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.validation__item-describe--space {
+    margin-bottom: 30px;
+}
+
+.validation__item-describetions {
+    margin-bottom: 25px;
+}
+
+@media only screen and(max-width: 1070px) {
+    .validation__item {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        
+        &:nth-child(2n) {
+            flex-direction: column-reverse;
+        }
+
+        &::after {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media only screen and(max-width: 1070px) {
+    .validation__item--documents {
+        &::after {
+            background: url(../img/document-sml.png) no-repeat;
+            width: 349px;
+            height: 307px;    
+            display: block;
+            content: ('');
+        }
+    }
+
+    .validation__item--folders {
+        &::after {
+            background: url(../img/folder-sml.png) no-repeat;
+            width: 350px;
+            height: 292px;
+            display: block;
+            content: ('');
+        }
+    }
+
+    .validation__item--computer {
+        &::after {
+            background: url(../img/computer-sml.png) no-repeat;
+            width: 350px;
+            height: 320px;    
+            display: block;
+            content: ('');
+        }
+    }
+}
