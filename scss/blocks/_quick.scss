@@ -1,0 +1,17 @@
+.quick__link {
+    width: 228px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid transparent;
+
+    &:hover {
+        border: 1px solid $link-color;
+        background-color: $snow;
+        color: #000;
+        transition: 0.3s ease all;
+    }
+}
+
+.quick__container {
+    padding-bottom: 150px;
+}

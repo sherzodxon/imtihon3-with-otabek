@@ -1163,7 +1163,8 @@ a {
 }
 
 .product__button {
-  max-width: 185px;
+  width: 185px;
+  display: block;
   margin: 0 auto;
   cursor: pointer;
   -webkit-transition: 0.3s ease all;
@@ -1203,13 +1204,10 @@ a {
   .product__item:last-child {
     margin: 0 auto;
     margin-top: 57px;
-<<<<<<< HEAD
   }
   .product__item:last-child {
     margin: 0 auto;
     margin-top: 50px;
-=======
->>>>>>> 272e47c338fd6933081062cbd1a6cb25e6911fcf
   }
   .product::after {
     left: -300px;
@@ -2067,7 +2065,9 @@ a {
   .faqs__list,
   .faqs__item {
     width: 260px;
-=======
+  }
+}
+
 .validation__list {
   margin: 0;
   padding: 0;
@@ -2318,5 +2318,24 @@ a {
     display: block;
     content: "";
   }
+}
+
+.quick__link {
+  width: 228px;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid transparent;
+}
+
+.quick__link:hover {
+  border: 1px solid #02897A;
+  background-color: #fff;
+  color: #000;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.quick__container {
+  padding-bottom: 150px;
 }
 /*# sourceMappingURL=main.css.map */
