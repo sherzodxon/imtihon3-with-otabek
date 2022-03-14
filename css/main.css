@@ -1190,9 +1190,11 @@ a {
   }
   .product__item {
     margin: 0 auto;
+    margin-top: 50px;
   }
   .product__item:last-child {
     margin: 0 auto;
+    margin-top: 50px;
   }
   .product::after {
     left: -100px;
@@ -1722,5 +1724,150 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-bottom: 168px;
+}
+
+.validation__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 187px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.validation__item:last-child {
+  margin-bottom: 0;
+}
+
+.validation__item:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.validation__item--documents::after {
+  background: url(../img/document.png) no-repeat;
+  width: 542px;
+  height: 500px;
+  display: block;
+  content: "";
+}
+
+.validation__item-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 486px;
+}
+
+.validation__item--computer::after {
+  background: url(../img/computer.png) no-repeat;
+  width: 543px;
+  height: 500px;
+  display: block;
+  content: "";
+}
+
+.validation__item--folders::after {
+  background: url(../img/folder.png) no-repeat;
+  width: 543px;
+  height: 500px;
+  display: block;
+  content: "";
+}
+
+.validation__item-desc {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #22343D;
+}
+
+.validation__item-heading {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #22343D;
+}
+
+.validation__item-heading--mb {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 23px;
+}
+
+.validation__item-heading--mbottom {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 131px;
+}
+
+.validation__item-head {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 16px;
+  color: #22343D;
+  margin-bottom: 12px;
+}
+
+.validation__item-describe {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 25px;
+  color: #22343D;
+}
+
+.validation__item-ticks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  position: relative;
+}
+
+.product__item-described {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 365px;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343D;
+  margin-bottom: 30px;
+  margin-left: 65px;
 }
 /*# sourceMappingURL=main.css.map */
