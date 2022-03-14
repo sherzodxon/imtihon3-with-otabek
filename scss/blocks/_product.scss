@@ -67,8 +67,6 @@
     height: 50px;
     border-radius: 19px;
     margin-bottom: 30px;
-
-
     display: block;
     background-repeat: no-repeat;
     background-position: center center;
@@ -149,6 +147,16 @@
 
     .product__item-span {
         margin: 0 auto;
+    }
+    .product__heading{
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 45px;
+    }
+}
+@media only screen and(max-width:380px){
+    .product__heading{
+        width: 250px;
     }
 }
 
