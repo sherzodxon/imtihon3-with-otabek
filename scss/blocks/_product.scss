@@ -125,18 +125,16 @@
 
     .product__item {
         margin: 0 auto;
-<<<<<<< HEAD
         margin-top: 57px;
         text-align: center;
         &:last-child {
             margin: 0 auto;
             margin-top: 57px;
-=======
+        }
         margin-top: 50px;
         &:last-child {
             margin: 0 auto;
             margin-top: 50px;
->>>>>>> validation
         }
     }
     .product {
@@ -202,4 +200,3 @@
         }
     }
 }
-
