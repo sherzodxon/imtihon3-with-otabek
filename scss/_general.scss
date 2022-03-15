@@ -10,16 +10,16 @@ body {
   font-family: "Poppins", "Arial", sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: var(--body-bg);
   height: 100vh;
-  color: black;
+  color: var(--text);
   display: flex;
   flex-direction: column;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--text);
 }
 .a-white{
   color:white;
@@ -35,10 +35,15 @@ a {
   width: 1px;
 }
 
-.black-body {
-  background-color: rgba(31, 46, 53, 1);
-  color: white;
-}
 .ice-body{
   overflow: hidden;
+}
+
+:root{
+  --body-bg: #E5E5E5;
+  --text:  #22343D;
+}
+:root[data-theme ='dark']{
+  --body-bg:#1f2e35;
+  --text:#fff;
 }

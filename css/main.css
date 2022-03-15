@@ -355,9 +355,9 @@ body {
   font-family: "Poppins", "Arial", sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: var(--body-bg);
   height: 100vh;
-  color: black;
+  color: var(--text);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,7 +369,7 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--text);
 }
 
 .a-white {
@@ -387,13 +387,18 @@ a {
   width: 1px;
 }
 
-.black-body {
-  background-color: #1f2e35;
-  color: white;
-}
-
 .ice-body {
   overflow: hidden;
+}
+
+:root {
+  --body-bg: #E5E5E5;
+  --text:  #22343D;
+}
+
+:root[data-theme='dark'] {
+  --body-bg:#1f2e35;
+  --text:#fff;
 }
 
 /* poppins-300 - latin */
@@ -451,7 +456,7 @@ a {
 .header {
   position: fixed;
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--body-bg);
   top: 0;
   z-index: 3;
 }
@@ -594,11 +599,11 @@ a {
 }
 
 .nav__item-link {
-  color: #263e49;
+  color: var(--text);
 }
 
 .nav__item-link:hover {
-  color: black;
+  color: var(--text);
 }
 
 .nav__item-link--white {
@@ -722,7 +727,7 @@ a {
     right: 0;
   }
   .nav__item-link {
-    color: white;
+    color: var(--text);
     font-size: 16px;
     text-align: left;
   }
@@ -895,7 +900,7 @@ a {
   font-size: 18px;
   line-height: 28px;
   margin-bottom: 45px;
-  color: #22343D;
+  color: --text;
   max-width: 458px;
 }
 
@@ -1105,7 +1110,6 @@ a {
   font-size: 32px;
   line-height: 48px;
   text-align: center;
-  color: #22343D;
 }
 
 .product__container {
@@ -1117,7 +1121,6 @@ a {
   font-weight: 600;
   font-size: 22px;
   margin-bottom: 13px;
-  color: #22343D;
 }
 
 .product__item-desc {
@@ -1126,7 +1129,6 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #22343D;
 }
 
 .product__item-span {
@@ -1597,7 +1599,7 @@ a {
 }
 
 .standart-content {
-  color: #fff;
+  color: var(--text);
 }
 
 .standart-link {
@@ -1959,6 +1961,7 @@ a {
   cursor: pointer;
   padding-left: 40px;
   position: relative;
+  color: var(--text);
 }
 
 .faqs__button::after {
@@ -2142,7 +2145,6 @@ a {
   font-weight: 600;
   font-size: 16px;
   margin-bottom: 8px;
-  color: #22343D;
 }
 
 .validation__item-heading {
@@ -2154,7 +2156,6 @@ a {
   font-weight: 700;
   font-size: 32px;
   line-height: 48px;
-  color: #22343D;
 }
 
 .validation__item-heading--mb {
@@ -2178,7 +2179,6 @@ a {
   font-family: 'Poppins';
   font-weight: 600;
   font-size: 16px;
-  color: #22343D;
   margin-bottom: 12px;
 }
 
@@ -2191,7 +2191,6 @@ a {
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 25px;
-  color: #22343D;
 }
 
 .validation__item-ticks {
@@ -2214,7 +2213,6 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #22343D;
   margin-bottom: 30px;
   margin-left: 65px;
 }
