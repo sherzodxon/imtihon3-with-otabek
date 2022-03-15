@@ -15,3 +15,54 @@
 .quick__container {
     padding-bottom: 150px;
 }
+
+.quick__wr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.quick__content {
+    max-width: 547px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.quick__content-title {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: #22343D;
+}
+
+.quick__content-desc {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #22343D;
+}
+
+.quick__wrap-contact-wraper {
+    display: flex;
+    align-items: center;
+}
+
+.quick__wrap-contact-wraper {
+    @include list;
+    margin-bottom: 24px;
+}
+
+.quick__wrap-contact-wraper-row {
+    flex-direction: row-reverse;
+}
+
+.quick__wrap-desc-left {
+    margin-left: 16px;
+}
+
+.quick__wrap-desc-right {
+    margin-right: 16px;
+}
