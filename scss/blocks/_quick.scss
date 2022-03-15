@@ -1,3 +1,20 @@
+.quick {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    &::before {
+        position: absolute;
+        background: no-repeat url(../img/round.png);
+        width: 200%;
+        height: 390px;
+        top: 0;
+        right: 50px;
+        transform: rotate(180deg);
+        z-index: -1;
+        content: ('');
+    }
+}
+
 .quick__link {
     width: 228px;
     margin: 0 auto;
@@ -13,6 +30,7 @@
 }
 
 .quick__container {
+    padding-top: 52px;
     padding-bottom: 150px;
 }
 
@@ -65,4 +83,88 @@
 
 .quick__wrap-desc-right {
     margin-right: 16px;
+}
+
+.quick__wrap-desc {
+    padding: 15px 25px;
+    background-color: $snow;
+    box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+    border-radius: 27px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2F281E;
+}
+
+.quick__wrap-img {
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 1306px) {
+    .quick {
+        &::before {
+            right: -30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1107px) {
+    .quick {
+        &::before {
+            right: -120px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1021px) {
+    .quick {
+        &::before {
+            right: -140px;
+        }
+    }
+}
+
+@media only screen and (max-width: 888px) {
+    .quick {
+        &::before {
+            right: -260px;
+        }
+    }
+}
+
+@media only screen and (max-width: 866px) {
+    .quick__wr {
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 761px) {
+    .quick {
+        &::before {
+            right: -290px;
+        }
+    }
+}
+
+@media only screen and (max-width: 592px) {
+    .quick {
+        &::before {
+            right: -390px;
+        }
+    }
+}
+
+@media only screen and (max-width: 388px) {
+    .quick__wrap-contact-wraper {
+        flex-direction: column;
+    }
+
+    .quick {
+        &::before {
+            width: 300%;
+            right: -450px;
+        }
+    }
 }
