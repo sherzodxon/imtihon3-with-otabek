@@ -34,62 +34,6 @@
     }
 }
 
-.nav__item-link--white {
-    color: rgb(196, 207, 218);
-
-    &:hover {
-        color: white;
-    }
-}
-
-.nav__item-link-one {
-    color: rgb(38, 62, 73);
-
-    &:hover {
-        color: black;
-    }
-}
-
-.nav__item-link--white-one {
-    color: rgb(196, 207, 218);
-
-    &:hover {
-        color: white;
-    }
-}
-
-.nav__item-link-two {
-    color: rgb(38, 62, 73);
-
-    &:hover {
-        color: black;
-    }
-}
-
-.nav__item-link--white-two {
-    color: rgb(196, 207, 218);
-
-    &:hover {
-        color: white;
-    }
-}
-
-.nav__item-link-three {
-    color: rgb(38, 62, 73);
-
-    &:hover {
-        color: black;
-    }
-}
-
-.nav__item-link--white-three {
-    color: rgb(196, 207, 218);
-
-    &:hover {
-        color: white;
-    }
-}
-
 @media only screen and(max-width:1120px) {
     .nav {
         margin-left: 100px;
@@ -147,8 +91,8 @@
         background: #02897A;
         height: 100%;
         z-index: 99;
-        padding-top: 50px;
-        padding-bottom: 250px;
+        padding-top: 90px;
+        padding-bottom: 290px;
         animation: nav-open 0.3s ease;
         right: 0;
     }

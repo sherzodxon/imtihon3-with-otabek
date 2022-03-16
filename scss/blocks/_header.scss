@@ -35,31 +35,19 @@
 }
 
 .header__hamburger--opened {
-    background:url(/img/hamburger.svg ) no-repeat center center;
+    background:url(/img/hamburger.svg ) no-repeat center center #E5E5E5;;
     width: 28px;
     height: 32px;
     border: none;
     display: none;
-}
-.header__hamburger-white--opened{
-    background:url(/img/hamb-white.svg ) no-repeat center center;
-    width: 28px;
-    height: 32px;
-    border: none;
-    display: none;
+    border-radius: 4px;
 }
 .header__hamburger--closed {
-   background: url(/img/xy.svg) no-repeat center center;
+   background: url(/img/xy.svg) no-repeat center center #E5E5E5;
     border: none;
     width: 28px;
     height: 32px;
-}
-.header__hamburger-white--closed{
-    background:url(/img/xy-wite.svg) no-repeat center center;
-    width: 28px;
-    height: 32px;
-    border: none;
-    display: none;
+    border-radius: 4px;
 }
 
 @media only screen and(max-width:965px) {

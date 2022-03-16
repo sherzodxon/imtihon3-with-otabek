@@ -24,9 +24,17 @@
 //     wxxbtn.classList.toggle("header__hamburger-white--closed");
 // })
 function theme() {
-    const toggleTheme = document.querySelector(".header__hamburger--opened");
+    const toggleTheme = document.querySelector(".header__white-btn");
     toggleTheme = addEventListener("click", () => {
-        document.documentElement.setAttribute('data-theme','dark');
+             let end = document.documentElement
+                         if (end.hasAttribute('data-theme')) {
+                             end.removeAttribute('data-theme')
+                             localStorage.removeItem('theme')
+                         } else {
+                             end.setAttribute('data-theme', 'dark')
+                             localStorage.removeItem('data-theme', 'dark')
+                         }
+                //document.documentElement.setAttribute("data-theme","dark");
     })
 }
 theme()

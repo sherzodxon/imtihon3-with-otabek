@@ -21,12 +21,12 @@
     line-height: 24px;
     letter-spacing: 0px;
     padding: 10px 25px;
-    border: 1px solid #BCD0E5;
+    border: 1px solid #02897A;
     box-sizing: border-box;
     border-radius: 4px;
     background-color: transparent;
     cursor: pointer;
-
+    color: var(--text);
     &:hover {
         background-color: #02897A;
         color: white;
@@ -41,7 +41,7 @@
     line-height: 24px;
     letter-spacing: 0px;
     padding: 10px 25px;
-    border: 1px solid #BCD0E5;
+    border: 1px solid transparent;
     box-sizing: border-box;
     border-radius: 4px;
     background: #02897A;
@@ -50,37 +50,17 @@
 
     &:hover {
         background-color: transparent;
-        color: black;
-    }
-}
-
-.navbar__in-btn--black {
-    color: white;
-    border: 1px solid #5c6268;
-}
-
-.navbar__up-btn--black {
-    border: 1px solid #5c6268;
-    &:hover {
-        color: #ffffff;
+        color: var(--text);
+        border: 1px solid #02897A;
     }
 }
 
 .navbar__white-btn {
-    background-image: url(/img/black-white.svg);
+    background: url(/img/black-white.svg) no-repeat center center;
     width: 32px;
     height: 32px;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
-.navbar__white-btn-black {
-    background-image: url(/img/black-white.svg);
-    width: 32px;
-    height: 32px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
 
 @media only screen and(max-width:965px) {
     .navbar {
@@ -111,7 +91,7 @@
         animation: nav-open 0.3s ease;
     }
     .navbar__in-btn{
-        background-color: white;
+        background-color: var(--body-bg);
         margin-bottom: 10px;
         width: 70px;
     }
@@ -119,7 +99,7 @@
         width: 70px;
         margin-bottom: 10px;
         &:hover{
-            background-color: #fff;
+            background-color: var(--body-bg);
         }
     }
 }
