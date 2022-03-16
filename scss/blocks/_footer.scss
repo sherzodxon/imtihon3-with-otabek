@@ -97,14 +97,37 @@
     color: #22343D;
 }
 
-.footer__contact-sign-link {
+.footer__contact-sign-btn {
     padding: 8px 15px;
     margin-top: 29px;
     border: none;
+    cursor: pointer;
+    &:hover {
+        background-color: $snow;
+        color: #22343D;
+        border: 1px solid $link-color;
+    }
 }
 
 .footer__contact-sign-input {
     width: 326px;
     height: 48px;
     border-radius: 4px;
+    border: none;
+    border: 1px solid #BCD0E5;
+}
+
+@media only screen and(max-width: 888px) {
+    .footer__container {
+        flex-direction: column;
+        max-width: 325px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .footer__container-wrapper {
+        width: 172px;
+        margin: 0 auto;
+    }
 }
