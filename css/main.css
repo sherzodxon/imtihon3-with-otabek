@@ -2724,7 +2724,7 @@ a {
 }
 
 .product-prising {
-  padding: 150px 0 149px;
+  padding: 150px 15px 149px;
 }
 
 .product-prising__title {
@@ -2740,11 +2740,14 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-top: 56px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .product-prising__container:before {
-  width: 780px;
-  height: 393px;
+  width: 528px;
+  height: 399px;
   background: no-repeat url(../img/product-prising.png);
   content: "";
 }
@@ -2753,6 +2756,15 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-left: auto;
+  max-width: 533px;
+}
+
+.product-prising__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
 }
 
 .product-prising__item-span {
@@ -2761,6 +2773,22 @@ a {
   height: 50px;
   background-color: #F4F5F7;
   display: block;
+  border-radius: 50%;
+  top: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.product-prising__item-span-arrow {
+  background-image: url(../img/pro-prising1.svg);
+}
+
+.product-prising__item-span-row {
+  background-image: url(../img/pro-prising2.svg);
+}
+
+.product-prising__item-span-column {
+  background-image: url(../img/pro-prising.svg);
 }
 
 .product-prising__item-heading {
@@ -2773,5 +2801,44 @@ a {
   display: flex;
   text-align: center;
   color: #22343D;
+  margin-left: 65px;
+  padding-top: 9px;
+  margin-bottom: 23px;
+}
+
+.product-prising__item-desc {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #22343D;
+}
+
+@media only screen and (max-width: 1137px) {
+  .product-prising__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product-prising__container:before {
+    width: 352px;
+    height: 289px;
+    margin-left: auto;
+    margin-right: auto;
+    background: no-repeat url(../img/product-priseing23.png) center center;
+    display: block;
+    content: "";
+  }
+  .product-prising__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
