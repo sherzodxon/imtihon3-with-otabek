@@ -2498,4 +2498,132 @@ a {
     right: -450px;
   }
 }
+
+.footer__logo-text {
+  font-family: 'Poppins';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  margin-left: 10px;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 150px;
+  padding-bottom: 46px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__logo-link {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__desc {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #22343D;
+  text-align: center;
+  margin-top: 17px;
+}
+
+.footer__svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__svg-links {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  border-radius: 50%;
+}
+
+.footer__svg-links:hover {
+  background-color: #dfdf60;
+}
+
+.footer__svg-links:last-child {
+  margin-right: 0;
+}
+
+.footer__svg-links-instagram {
+  background: no-repeat url(../img/instagram.svg) #EDFFFC;
+  background-position: center center;
+}
+
+.footer__svg-links-facebook {
+  background: no-repeat url(../img/facebook.svg) #EDFFFC;
+  background-position: center center;
+}
+
+.footer__svg-links-twitter {
+  background: no-repeat url(../img/twitter.svg) #EDFFFC;
+  background-position: center center;
+}
+
+.footer_contact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__contact-item-link {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  color: #22343D;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.footer__contact-item-link:hover {
+  border-bottom: 1px solid #02897A;
+}
+
+.footer__contact-item {
+  margin-bottom: 27px;
+}
+
+.footer__contact-sign-title {
+  max-width: 280px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #22343D;
+}
+
+.footer__contact-sign-link {
+  padding: 8px 15px;
+  margin-top: 29px;
+  border: none;
+}
+
+.footer__contact-sign-input {
+  width: 326px;
+  height: 48px;
+  border-radius: 4px;
+}
 /*# sourceMappingURL=main.css.map */
