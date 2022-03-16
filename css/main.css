@@ -2722,4 +2722,56 @@ a {
     margin-bottom: 43px;
   }
 }
+
+.product-prising {
+  padding: 150px 0 149px;
+}
+
+.product-prising__title {
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 34px;
+  color: #22343D;
+}
+
+.product-prising__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 56px;
+}
+
+.product-prising__container:before {
+  width: 780px;
+  height: 393px;
+  background: no-repeat url(../img/product-prising.png);
+  content: "";
+}
+
+.product-prising__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-prising__item-span {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #F4F5F7;
+  display: block;
+}
+
+.product-prising__item-heading {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: #22343D;
+}
 /*# sourceMappingURL=main.css.map */
