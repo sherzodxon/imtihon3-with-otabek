@@ -777,7 +777,7 @@ a {
     -webkit-animation: nav-open 0.3s ease;
             animation: nav-open 0.3s ease;
     background-color: #02897A;
-    height: 52vh;
+    height: 46vh;
   }
   .navbar__in-btn {
     background-color: var(--body-bg);
@@ -2506,7 +2506,7 @@ a {
   background-position: center center;
 }
 
-.footer_contact-list {
+.footer__contact-list {
   margin: 0;
   padding: 0;
   list-style: none;
