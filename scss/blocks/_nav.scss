@@ -14,6 +14,7 @@
 .nav__list {
     display: flex;
     @include reset-list;
+   
 }
 
 .nav__item {
@@ -88,18 +89,31 @@
         flex-direction: column;
         position: absolute;
         width: 300px;
-        background: #02897A;
+        background: transparent;
         height: 300px;
         z-index: 99;
         padding-top: 90px;
         padding-bottom: 90px;
         animation: nav-open 0.3s ease;
         right: 0;
+        &::after{
+            width: 300px;
+            height: 100vh;
+            content: "";
+            position: absolute;
+            display: block;
+            background-color: #02897A;
+            top: 0;
+            display: block;
+            right: 0;
+            z-index: -20;
+        }
     }
     .nav__item-link{
-        color: var(--text);
+        color: wheat;
         font-size: 16px;
         text-align: left;
+      
     }
 
 }
@@ -108,5 +122,8 @@
     .nav__list--active{
         width: 250px;
         padding-top: 40px;
+        &::after{
+            width: 240px;
+        }
     }
 }

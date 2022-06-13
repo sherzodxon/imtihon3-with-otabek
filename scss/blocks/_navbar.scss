@@ -85,12 +85,12 @@
         flex-direction: column;
         width: 300px;
         position: absolute;
-        top: 350px;     
+        top: 380px;     
         right: 0;
         z-index: 99;
         animation: nav-open 0.3s ease;
-        background-color: #02897A;
-        height: 46vh;
+        background-color: transparent;
+        height: 130px;
     }
     .navbar__in-btn{
         background-color: var(--body-bg);
@@ -108,8 +108,8 @@
 @media only screen and (max-width:350px){
     .navbar--active{
        right: 0;
-        top: 300px;
+        top: 350px;
         width: 250px;
-        height: 45vh;
+        height: 150px;
     }
 }

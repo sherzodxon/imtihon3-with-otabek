@@ -647,7 +647,7 @@ a {
             flex-direction: column;
     position: absolute;
     width: 300px;
-    background: #02897A;
+    background: transparent;
     height: 300px;
     z-index: 99;
     padding-top: 90px;
@@ -656,8 +656,20 @@ a {
             animation: nav-open 0.3s ease;
     right: 0;
   }
+  .nav__list--active::after {
+    width: 300px;
+    height: 100vh;
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #02897A;
+    top: 0;
+    display: block;
+    right: 0;
+    z-index: -20;
+  }
   .nav__item-link {
-    color: var(--text);
+    color: wheat;
     font-size: 16px;
     text-align: left;
   }
@@ -667,6 +679,9 @@ a {
   .nav__list--active {
     width: 250px;
     padding-top: 40px;
+  }
+  .nav__list--active::after {
+    width: 240px;
   }
 }
 
@@ -771,13 +786,13 @@ a {
             flex-direction: column;
     width: 300px;
     position: absolute;
-    top: 350px;
+    top: 380px;
     right: 0;
     z-index: 99;
     -webkit-animation: nav-open 0.3s ease;
             animation: nav-open 0.3s ease;
-    background-color: #02897A;
-    height: 46vh;
+    background-color: transparent;
+    height: 130px;
   }
   .navbar__in-btn {
     background-color: var(--body-bg);
@@ -796,9 +811,9 @@ a {
 @media only screen and (max-width: 350px) {
   .navbar--active {
     right: 0;
-    top: 300px;
+    top: 350px;
     width: 250px;
-    height: 45vh;
+    height: 150px;
   }
 }
 
